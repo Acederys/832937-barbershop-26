@@ -1,100 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Барбершоп "Бородинский"</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#"><img src="img/logo.svg" alt="borodinski" width="111" height="24"></a>
-                <ul>
-                    <li><a href="">ИНФОРМАЦИЯ</a></li>
-                    <li><a href="">НОВОСТИ</a></li>
-                    <li><a href="">ПРАЙС-ЛИСТ</a></li>
-                    <li><a href="">МАГАЗИН</a></li>
-                    <li><a href="">КОНТАКТЫ</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <button type="button">ВХОД</button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <header>
-                <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-                <nav>
-                    <a href="index.html">ГЛАВНАЯ </a>
-                    <a href="#">МАГАЗИН</a>
-                    <a>СРЕДСТВА ДЛЯ УХОДА</a>
-                </nav>
-            </header>
-            <section>
-                <h2>Каталог</h2>
-                <ul>
-                    <li>
-                        <img src="img/product-1.jpg" alt="Baxter of California" width="220" height="165">
-                        <h2>Набор для путешествий «Baxter of California»</h2>
-                        <p>2 900 ₽</p>
-                        <a href="#">КУПИТЬ</a>
-                    </li>
-                    <li>
-                        <img src="img/product-2.jpg" alt="Baxter of California" width="220" height="165">
-                        <h2>Увлажняющий кондиционер «Baxter of California»</h2>
-                        <p>750 ₽</p>
-                        <a href="#">КУПИТЬ</a>
-                    </li>
-                    <li>
-                        <img src="img/product-3.jpg" alt="SUAVECITO" width="220" height="165">
-                        <h2>Гель для волос «SUAVECITO»</h2>
-                        <p>290 ₽</p>
-                        <a href="#">КУПИТЬ</a>
-                    </li>
-                    <li>
-                        <img src="img/product-4.jpg" alt="American crew" width="220" height="165">
-                        <h2>Глина для укладки волос «American crew»</h2>
-                        <p>500 ₽</p>
-                        <a href="#">КУПИТЬ</a>
-                    </li>
-                    <li>
-                        <img src="img/product-5.jpg" alt="AMERICAN CREW" width="220" height="165">
-                        <h2>Гель для волос «AMERICAN CREW»</h2>
-                        <p>300 ₽</p>
-                        <a href="#">КУПИТЬ</a>
-                    </li>
-                    <li>
-                        <img src="img/product-6.jpg" alt="Baxter of California" width="220" height="165">
-                        <h2>Набор для бритья «Baxter of California»</h2>
-                        <p>3 900 ₽</p>
-                        <a href="#">КУПИТЬ</a>
-                    </li>
-                </ul>
-            </section>
-            <div>
-                <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-            <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-              АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-              <a href="map.html">КАК НАС НАЙТИ?</a><br>
-              ТЕЛЕФОН: +7 (495) 666-02-66</p>
-            <div>
-                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <p>РАЗРАБОТАНО:<a href="#"></a></p>
-        </footer>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Барбершоп "Бородинский"</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#"><img src="img/logo.svg" alt="borodinski" width="111" height="24"></a>
+      <ul>
+        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+        <li><a href="#">НОВОСТИ</a></li>
+        <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+        <li><a href="#">МАГАЗИН</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+      <ul>
+        <li>
+          <button type="button">ВХОД</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header>
+      <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+      <nav>
+        <a href="index.html">ГЛАВНАЯ </a>
+        <a href="#">МАГАЗИН</a>
+        <a>СРЕДСТВА ДЛЯ УХОДА</a>
+      </nav>
+    </header>
+    <section>
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset>
+          <legend>ПРОИЗВОДИТЕЛИ:</legend>
+          <p>
+            <label for="Baxter-of-California"><input type="checkbox" id="Baxter-of-California" checked>Baxter of
+              California</label>
+          </p>
+          <p>
+            <label for="Mr-Natty"><input type="checkbox" id="Mr-Natty">Mr Natty</label>
+          </p>
+          <p>
+            <label for="Suavecito"><input type="checkbox" id="Suavecito" checked>Suavecito</label>
+          </p>
+          <p>
+            <label for="Malin+Goetz"><input type="checkbox" id="Malin+Goetz">Malin+Goetz</label>
+          </p>
+          <p>
+            <label for="Murray’s"><input type="checkbox" id="Murray’s">Murray’s</label>
+          </p>
+          <p>
+            <label for="American-Crew"><input type="checkbox" id="American-Crew" checked>American Crew</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>ГРУППЫ ТОВАРОВ:</legend>
+          <label for="razor"><input type="radio" name="item-group" id="razor">Бритвенные принадлежности</label>
+          <label for="leather"><input type="radio" name="item-group" id="leather" checked>Средства для ухода</label>
+          <label for="accessories"><input type="radio" name="item-group" id="accessories">Аксессуары</label>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Каталог</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>
+              <span>Набор для путешествий</span>
+              <span>«Baxter of California»</span>
+            </h3>
+            <img src="img/product-1.jpg" alt="Baxter of California" width="220" height="165">
+          </a>
+          <p>2 900 ₽</p>
+          <a href="#">КУПИТЬ</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>
+              <span>Увлажняющий кондиционер</span>
+              <span></span>«Baxter of California»</span>
+            </h3>
+            <img src="img/product-2.jpg" alt="Baxter of California" width="220" height="165">
+          </a>
+          <p>750 ₽</p>
+          <a href="#">КУПИТЬ</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>
+              <span>Гель для волос</span>
+              <span>«SUAVECITO»</span>
+            </h3>
+            <img src="img/product-3.jpg" alt="SUAVECITO" width="220" height="165">
+
+            <p>290 ₽</p>
+            <a href="#">КУПИТЬ</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>
+              <span>Глина для укладки волос</span>
+              <span>«American crew»</span>
+            </h3>
+            <img src="img/product-4.jpg" alt="American crew" width="220" height="165">
+          </a>
+          <p>500 ₽</p>
+          <a href="#">КУПИТЬ</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>
+              <span>Гель для волос</span>
+              <span>«AMERICAN CREW»</span>
+            </h3>
+            <img src="img/product-5.jpg" alt="AMERICAN CREW" width="220" height="165">
+          </a>
+          <p>300 ₽</p>
+          <a href="#">КУПИТЬ</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>
+              <span>Набор для бритья</span>
+              <span>«Baxter of California»</span>
+            </h3>
+            <img src="img/product-6.jpg" alt="Baxter of California" width="220" height="165">
+          </a>
+          <p>3 900 ₽</p>
+          <a href="#">КУПИТЬ</a>
+        </li>
+      </ul>
+    </section>
+    <div>
+      <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+      АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+      <a href="map.html">КАК НАС НАЙТИ?</a><br>
+      ТЕЛЕФОН: +7 (495) 666-02-66</p>
+    <div>
+      <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <p>РАЗРАБОТАНО:<a href="#"></a></p>
+  </footer>
+</body>
+
 </html>
